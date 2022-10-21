@@ -3,7 +3,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { VueLoaderPlugin } = require('vue-loader')
 
-module.exports = {
+const base = {
    profile: true,
    cache: {
       type: 'filesystem'
@@ -68,10 +68,12 @@ module.exports = {
      extensions: ['.ts', '.tsx', '.js', '.jsx', '.vue']
    },
    devServer: {
-     port: 8080,
+     port: 8081,
      historyApiFallback: true, // 支持 history模式
      static: {
        directory: path.join(__dirname, 'public'),
      },
    }
 }
+
+module.exports = base

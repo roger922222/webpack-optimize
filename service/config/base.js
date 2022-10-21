@@ -64,7 +64,7 @@ module.exports =  {
     ],
     resolve: {
       alias: {
-        '@': path.resolve('../../src')
+        '@': path.resolve(__dirname, '../../src')
       },
       extensions: ['.ts', '.tsx', '.js', '.jsx', '.vue']
     },

@@ -1,7 +1,9 @@
 module.exports = (base) => {
-  return Object.assign(base, {
+  Object.assign(base, {
     cache: {
-        type: 'filesystem'
+      type: "filesystem",
     },
-  })
-}
+  });
+
+  return base;
+};

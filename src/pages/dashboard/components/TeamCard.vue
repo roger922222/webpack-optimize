@@ -11,7 +11,7 @@
       <div class="p-4">
         <div class="text-center mb-4 opacity-90">
           <a href="#" class="block relative">
-            <img alt="profil" src="../../../assets/bg.png"
+            <img alt="profil" :src="require('@/assets/bg.png')"
               class="mx-auto object-cover rounded-full h-40 w-40 " />
           </a>
         </div>
@@ -77,7 +77,7 @@
       <div class="p-4">
         <div class="text-center mb-4 opacity-90">
           <a href="#" class="block relative">
-            <img alt="profil" src="../../../assets/bg.png"
+            <img alt="profil" :src="require('@/assets/bg.png')"
               class="mx-auto object-cover rounded-full h-40 w-40 " />
           </a>
         </div>
@@ -144,7 +144,7 @@
       <div class="p-4">
         <div class="text-center mb-4 opacity-90">
           <a href="#" class="block relative">
-            <img alt="profil" src="../../../assets/bg.png" class="mx-auto object-cover rounded-full h-40 w-40" />
+            <img alt="profil" :src="require('@/assets/bg.png')" class="mx-auto object-cover rounded-full h-40 w-40" />
           </a>
         </div>
         <div class="text-center">
