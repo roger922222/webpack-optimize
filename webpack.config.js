@@ -5,6 +5,9 @@ const { VueLoaderPlugin } = require('vue-loader')
 
 module.exports = {
    profile: true,
+   cache: {
+      type: 'filesystem'
+   },
    mode: 'development', // 开发环境
    entry: path.resolve(__dirname, './src/main.ts'),
    output: {

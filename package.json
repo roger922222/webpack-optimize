@@ -7,7 +7,7 @@
     "dev": "webpack serve --progress --config ./webpack.config.js",
     "build:report": "webpack --config ./webpack.config.js --json=stats.json",
     "build:speed": "webpack --config ./SpeedMeasure.js",
-    "build": "webpack --config ./webpack.config.js"
+    "build": "webpack --config ./service/build.js"
   },
   "keywords": [],
   "author": "",
