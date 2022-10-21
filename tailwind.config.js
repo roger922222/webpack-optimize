@@ -1,31 +1,36 @@
 module.exports = {
-  content: [
-    './src/**/*.{vue,js,ts,jsx,tsx}'
-  ],
-   theme: {
-    colors: {
-      'blue': '#1fb6ff',
-      'purple': '#7e5bef',
-      'pink': '#ff49db',
-      'orange': '#ff7849',
-      'green': '#13ce66',
-      'yellow': '#ffc82c',
-      'gray-dark': '#273444',
-      'gray': '#8492a6',
-      'gray-light': '#d3dce6',
-    },
-    fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
-    },
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  darkMode: "class", // or 'media' or 'class'
+  theme: {
     extend: {
-      spacing: {
-        '8xl': '96rem',
-        '9xl': '128rem',
+      zIndex: {
+        "-1": "-1",
       },
-      borderRadius: {
-        '4xl': '2rem',
-      }
-    }
+      flexGrow: {
+        5: "5",
+      },
+      maxHeight: {
+        "screen-menu": "calc(100vh - 3.5rem)",
+        modal: "calc(100vh - 160px)",
+      },
+      transitionProperty: {
+        position: "right, left, top, bottom, margin, padding",
+        textColor: "color",
+      },
+      keyframes: {
+        fadeOut: {
+          from: { opacity: 1 },
+          to: { opacity: 0 },
+        },
+        fadeIn: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+      },
+      animation: {
+        fadeOut: "fadeOut 250ms ease-in-out",
+        fadeIn: "fadeIn 250ms ease-in-out",
+      },
+    },
   },
-}
+};
