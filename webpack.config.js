@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { VueLoaderPlugin } = require('vue-loader')
 
 module.exports = {
+   profile: true,
    mode: 'development', // 开发环境
    entry: path.resolve(__dirname, './src/main.ts'),
    output: {
